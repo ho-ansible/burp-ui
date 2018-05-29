@@ -28,7 +28,8 @@ Assumes burp server and nginx are on same host.
 ```
 
 ## License
-MIT
++ burp-ui is licensed [BSD 3-clause](https://github.com/ziirish/burp-ui/blob/master/LICENSE).
++ This ansible role is licensed [MIT](LICENSE).
 
 ## Author Information
 + burp-ui is by [ziirish](https://github.com/ziirish/burp-ui)
