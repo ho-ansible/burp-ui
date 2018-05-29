@@ -1,0 +1,3 @@
+---
+# location where pip installs binary
+burpui_bin: /usr/local/bin/burp-ui 
