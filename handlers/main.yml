@@ -1,0 +1,7 @@
+---
+
+- name: restart burp-ui
+  service:
+    name: burp-ui
+    state: restarted
+
