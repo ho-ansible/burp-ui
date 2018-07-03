@@ -6,6 +6,6 @@ server {
   server_name {{ burpui_host }};
 
   location / {
-    proxy_pass http://localhost:{{ burpui_localport }};
+    proxy_pass http://127.0.0.1:{{ burpui_localport }};
   }
 }
