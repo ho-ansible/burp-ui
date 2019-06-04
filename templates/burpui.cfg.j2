@@ -30,5 +30,8 @@ bconfsrv = {{ burp_conf_dir }}/server.conf
 tmpdir = /tmp/burp-ui
 timeout = 15
 
+[BASIC]
+admin = "{{ burpui_pw_hash }}"
+
 [BASIC:AUTH]
 admin = "{{ burpui_pw_hash }}"
