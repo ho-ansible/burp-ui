@@ -18,6 +18,7 @@
       - markupsafe
       - functools32
       - "burp-ui[sql]"
+    state: latest
   notify: restart burp-ui
 
 - name: burp | web UI | config
