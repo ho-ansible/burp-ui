@@ -1,0 +1,23 @@
+---
+
+- name: burp-ui | disable services
+  service:
+    name: burp-ui
+    state: stopped
+    enabled: no
+
+# doesn't uninstall dependencies
+- name: burp-ui | uninstall pip package
+  pip:
+    name: burp-ui
+    state: absent
+
+- name: burp-server | remove config
+  file:
+    path: "{{ item }}"
+    state: absent
+  loop:
+  - "{{ burp_conf_dir }}/burpui.cfg"
+  - /etc/logrotate.d/burp-ui
+  - /etc/nginx/sites-available/burp
+  - /etc/systemd/system/burp-ui.service

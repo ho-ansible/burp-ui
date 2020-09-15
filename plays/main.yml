@@ -1,0 +1,11 @@
+#! /usr/bin/env ansible-playbook
+# Configure web UI for burp backup server
+# Replace 'backup' with your own inventory group
+---
+- name: burp-ui | backup server web UI
+  hosts: backup
+  roles:
+  - role: burp-ui
+    tags:
+    - burp
+    - backup

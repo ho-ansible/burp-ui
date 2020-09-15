@@ -1,0 +1,13 @@
+#! /usr/bin/env ansible-playbook
+# Uninstall web UI for burp backup server
+# Replace 'backup' with your own inventory group
+---
+- name: burp-ui | uninstall
+  hosts: backup
+  tasks:
+  - include_role:
+      name: burp-ui
+      tasks_from: uninstall.yml
+    tags:
+    - burp
+    - backup
