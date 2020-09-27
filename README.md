@@ -15,17 +15,13 @@ Assumes burp server and nginx are on same host.
 + `burpui_log`: flask logfile
 + Variables from the `burp` role are also used.
 
+## Playbooks
++ `main.yml`: apply role
++ `uninstall.yml`: remove. Run before removing config from inventory.
+
 ## Dependencies
 + [ho-ansible.burp-server](https://github.com/ho-ansible/burp-server)
 + [ho-ansible.nginx](https://github.com/ho-ansible/nginx)
-
-## Example Playbook
-
-```
-- hosts: backup
-  roles:
-    - { role: ho-ansible.burp-ui }
-```
 
 ## License
 + burp-ui is licensed [BSD 3-clause](https://github.com/ziirish/burp-ui/blob/master/LICENSE).
@@ -34,4 +30,3 @@ Assumes burp server and nginx are on same host.
 ## Author Information
 + burp-ui is by [ziirish](https://github.com/ziirish/burp-ui)
 + This ansible role is by [Sean Ho](https://github.com/ho-ansible/)
-
