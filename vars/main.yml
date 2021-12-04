@@ -1,3 +1,6 @@
 ---
+# install burp-ui from this source (passed to pip)
+# burpui_src: "burp-ui[sql]"
+burpui_src: "git+https://github.com/ziirish/burp-ui#egg=burp-ui[sql]"
 # location where pip installs binary
 burpui_bin: /usr/local/bin/burp-ui 

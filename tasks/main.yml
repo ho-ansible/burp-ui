@@ -16,7 +16,7 @@
   pip:
     name:
     - MarkupSafe
-    - "burp-ui[sql]"
+    - "{{ burpui_src }}"
     state: latest
   notify: restart burp-ui
 
