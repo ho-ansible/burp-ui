@@ -5,8 +5,8 @@
   - package
   package:
     name:
-    - python-pip
-    - libpython-dev
+    - python3-pip
+    - libpython3-dev
     - libffi-dev
     - libssl-dev
 
@@ -15,8 +15,7 @@
   - package
   pip:
     name:
-    - markupsafe
-    - functools32
+    - MarkupSafe
     - "burp-ui[sql]"
     state: latest
   notify: restart burp-ui
