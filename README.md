@@ -1,6 +1,10 @@
 # Ansible role: burp-ui
 ziirish's web interface to Graham Keeling's `burp` backup software
 
+## DEPRECATED
+This functionality has been moved to kubernetes,
+so this ansible role is no longer maintained.
+
 ## Requirements
 Only tested on Debian stable, for now.
 
